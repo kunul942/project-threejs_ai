@@ -103,7 +103,7 @@ export const Customizer = () => {
                 headers: {'Content-Type': 'application/json'}, 
                 body: JSON.stringify({ prompt }) 
             }
-            const resp = await fetch('http://localhost:8080/api/v1/dalle', options)
+            const resp = await fetch('https://project-threejs-ai-xr71.onrender.com/api/v1/dalle', options)
 
             const data = await resp.json()
             console.log({ data })
